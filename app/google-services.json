@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "886009541035",
+    "firebase_url": "https://weathero-50ad2.firebaseio.com",
+    "project_id": "weathero-50ad2",
+    "storage_bucket": "weathero-50ad2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:886009541035:android:59b55723f24b3322a8a2ee",
+        "android_client_info": {
+          "package_name": "com.gmail.vdomasapp.weathero"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "886009541035-m14vcrtt2576f5b25al7bl5kp16lrnta.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNaeX0KK3SzIXr5FQXMtxfY8FtUrZjuwY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "886009541035-m14vcrtt2576f5b25al7bl5kp16lrnta.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

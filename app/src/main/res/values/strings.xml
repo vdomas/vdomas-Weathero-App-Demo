@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Weathero</string>
+
+    <string name="weather_image">Weather image</string>
+    <string name="default_long_text">---------</string>
+    <string name="default_short_text">--</string>
+    <string name="weather_icon">Weather icon</string>
+    <string name="pin_icon">Pin icon</string>
+    <string name="settings_icon">Settings icon</string>
+    <string name="wind_icon">Wind icon</string>
+    <string name="morning">Morning</string>
+    <string name="night">Night</string>
+    <string name="evening">Evening</string>
+    <string name="tue_15_dec">Tue 15 Dec</string>
+    <string name="moderate_rain">Moderate rain</string>
+    <string name="wind_direction">Wind direction</string>
+    <string name="wind_speed">Wind speed</string>
+    <string name="gps_dialog_title">Enable GPS</string>
+    <string name="gps_dialog_message">This application requires high accuracy GPS to work properly, do you want to enable it?</string>
+    <string name="gps_dialog_confirmation_button">OK</string>
+    <string name="gps_dialog_cancel_button">Cancel</string>
+    <string name="no_internet">No Internet Connection</string>
+
+    <string name="current_temperature">%d°</string>
+    <string name="feeling_temperature">Feels like %d°</string>
+    <string name="wind_speed_meters_per_second">%dm/s</string>
+    <string name="wind_speed_miles_per_hour">%dmph</string>
+    <string name="card_item_weather">%d°/%d°</string>
+    <string name="location_updated">Location Updated: %1$s</string>
+
+    <string name="gps_signal_is_disabled">GPS signal is disabled</string>
+    <string name="celsius">Celsius</string>
+    <string name="fahrenheit">Fahrenheit</string>
+    <string name="changes_require_app_restart">Changes require application restart</string>
+    <string name="active">Active</string>
+    <string name="disabled">Disabled</string>
+    <string name="application_feedback">Application feedback</string>
+</resources>

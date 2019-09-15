@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gmail.vdomasapp.weathero.views.CustomListPreference
+        app:defaultValue="metric"
+        app:dialogTitle="Unit"
+        app:entries="@array/pref_unit_entries"
+        app:entryValues="@array/pref_unit_values"
+        app:key="key_unit"
+        app:summary="Celsius"
+        app:title="Unit" />
+    <com.gmail.vdomasapp.weathero.views.CustomCheckBoxPreference
+        app:defaultValue="true"
+        app:summary="Anonymous crash reports"
+        app:key="check_box_crash_reports"
+        app:title="Anonymous crash reports" />
+    <com.gmail.vdomasapp.weathero.views.CustomFeedbackPreference
+        app:key="feedback"
+        app:title="Send feedback"
+        app:summary="Report issues or suggest new features" />
+    <com.gmail.vdomasapp.weathero.views.CustomPolicyPreference
+        app:key="policy"
+        app:title="Privacy policy"/>
+    <com.gmail.vdomasapp.weathero.views.CustomPreference
+        app:title="Build version"
+        app:summary="0.1"
+        app:key="build_version_key"/>
+</androidx.preference.PreferenceScreen>

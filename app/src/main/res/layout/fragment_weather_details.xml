@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/customLayoutBackgroundColor"
+    tools:context=".ui.WeatherDetailsFragment">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="4dp"
+        android:text="@string/morning"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        app:autoSizePresetSizes="@array/auto_size_text_sizes"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="@+id/textView5"
+        app:layout_constraintEnd_toStartOf="@+id/textView5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/night"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        app:autoSizePresetSizes="@array/auto_size_text_sizes"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="@+id/textView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toTopOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="50dp"
+        android:text="@string/evening"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        app:autoSizePresetSizes="@array/auto_size_text_sizes"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@+id/textView6"
+        app:layout_constraintEnd_toStartOf="@+id/textView4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/fragment_weather_details_tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/default_long_text"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/weather_details_date_text_size"
+        app:layout_constraintBottom_toTopOf="@+id/fragment_weather_details_tv_day_temperature"
+        app:layout_constraintEnd_toEndOf="@+id/fragment_weather_details_tv_day_temperature"
+        app:layout_constraintStart_toStartOf="@+id/fragment_weather_details_tv_day_temperature"
+        tools:text="@string/tue_15_dec" />
+
+    <ImageView
+        android:id="@+id/fragment_weather_details_img_weather_icon"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/ic_cloud"
+        app:layout_constraintBottom_toTopOf="@+id/textView5"
+        app:layout_constraintEnd_toStartOf="@+id/fragment_weather_details_tv_day_temperature"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.461"
+        tools:src="@drawable/ic_cloud"
+        android:contentDescription="@string/weather_icon"/>
+
+    <TextView
+        android:id="@+id/fragment_weather_details_tv_day_temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="@string/default_short_text"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/weather_details_temperature_text_size"
+        app:layout_constraintBottom_toBottomOf="@+id/fragment_weather_details_img_weather_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/fragment_weather_details_img_weather_icon"
+        app:layout_constraintTop_toTopOf="@+id/fragment_weather_details_img_weather_icon"
+        tools:text="10" />
+
+    <TextView
+        android:id="@+id/fragment_weather_details_tv_weather_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/default_long_text"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/weather_details_description_text_size"
+        app:layout_constraintEnd_toEndOf="@+id/fragment_weather_details_img_weather_icon"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/fragment_weather_details_img_weather_icon"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_weather_details_img_weather_icon"
+        tools:text="@string/moderate_rain" />
+
+    <TextView
+        android:id="@+id/fragment_weather_details_tv_morning_temperature"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:text="@string/default_short_text"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        app:autoSizePresetSizes="@array/auto_size_text_sizes"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="@+id/textView3"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        tools:text="3" />
+
+    <TextView
+        android:id="@+id/fragment_weather_details_tv_evening_temperature"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:text="@string/default_short_text"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        app:autoSizePresetSizes="@array/auto_size_text_sizes"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="@+id/textView5"
+        app:layout_constraintStart_toStartOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        tools:text="5" />
+
+    <TextView
+        android:id="@+id/fragment_weather_details_tv_night_temperature"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:text="@string/default_short_text"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        app:autoSizePresetSizes="@array/auto_size_text_sizes"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="@+id/textView4"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        tools:text="4" />
+
+    <TextView
+        android:id="@+id/fragment_weather_details_tv_wind_speed"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:text="@string/default_short_text"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        app:autoSizePresetSizes="@array/auto_size_text_sizes"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="@+id/textView6"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        tools:text="15m/s" />
+
+    <TextView
+        android:id="@+id/fragment_weather_details_tv_wind_degree"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:text="@string/default_short_text"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        app:autoSizePresetSizes="@array/auto_size_text_sizes"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="@+id/textView7"
+        app:layout_constraintStart_toStartOf="@+id/textView7"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        tools:text="NW" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="80dp"
+        android:text="@string/wind_speed"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        app:autoSizePresetSizes="@array/auto_size_text_sizes"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textView7"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:text="@string/wind_direction"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        app:autoSizePresetSizes="@array/auto_size_text_sizes"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="@+id/textView6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView6"
+        app:layout_constraintTop_toTopOf="@+id/textView6" />
+</androidx.constraintlayout.widget.ConstraintLayout>

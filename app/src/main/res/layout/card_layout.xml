@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/relative_layout_for_card_view">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="110dp"
+        android:layout_height="120dp"
+        app:cardBackgroundColor="@color/colorDarkPink"
+        app:cardCornerRadius="@dimen/card_corner_radius"
+        app:cardElevation="@dimen/card_elevation">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_item_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/arimo"
+                android:text="@string/default_short_text"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/card_item_day_text_size"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Mon" />
+
+            <TextView
+                android:id="@+id/tv_item_weather"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="26dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginBottom="4dp"
+                android:fontFamily="@font/arimo"
+                android:text="@string/default_long_text"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/card_item_weather_text_size"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:text="10°/5°" />
+
+            <ImageView
+                android:id="@+id/img_item_weather_icon"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/weather_image"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toTopOf="@+id/tv_item_weather"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_item_day"
+                app:srcCompat="@drawable/ic_cloud"
+                tools:src="@drawable/ic_cloud" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

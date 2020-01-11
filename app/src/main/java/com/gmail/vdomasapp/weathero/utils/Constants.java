@@ -6,11 +6,11 @@ public final class Constants {
     public static final String TAG = "moshi";
 
     public static final String OPEN_WEATHER_URL = "https://api.openweathermap.org/";
-    public static final String OPEN_WEATHER_API_KEY = "c7070ff0f8cf5621e90fe7ba59c80b40";
+    public static final String OPEN_WEATHER_API_KEY = "API_KEY_HERE";
 
     public static final String HERE_GEO_CODER_URL = "https://reverse.geocoder.api.here.com/";
-    public static final String HERE_APP_ID= "CDX65GjG1NrIe6GJTNHe";
-    public static final String HERE_APP_CODE= "s0bXAyFOme-4mC1dKEhkIQ";
+    public static final String HERE_APP_ID= "KEY_HERE";
+    public static final String HERE_APP_CODE= "KEY_HERE";
 
     public static final int PERMISSIONS_REQUEST_ACCESS_FINE_LOCATION = 12;
     public static final int PERMISSIONS_REQUEST_ENABLE_GPS = 11;
